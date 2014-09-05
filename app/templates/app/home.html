@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculo del número menor de saltos según un porcentaje</title>
+</head>
+<body>
+    <h1>N&uacute;meros de salto</h1>
+    <p>Calculo del menor n&uacute;mero, en donde el n&uacute;mero de &#34;n&uacute;meros de salto&#34; es referente a un porcentaje dado respecto a un conjunto de n&uacute;meros.</p>
+    <form action="." method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Calcular">
+    </form>
+    {% if result %}
+        <h2>Resultado: {{ result }}</h2>
+    {% endif %}
+</body>
+</html>
